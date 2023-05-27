@@ -1,0 +1,11 @@
+{
+  "name": "@waline-plugins/privacy",
+  "version": "1.0.0",
+  "description": "Waline plugin for remove store user privacy info",
+  "main": "index.js",
+  "keywords": [
+    "waline","plugin","comment","privacy"
+  ],
+  "author": "lizheming<i@imnerd.org>",
+  "license": "MIT"
+}
