@@ -1,0 +1,14 @@
+{
+  "name": "@waline-plugins/hyper-comment",
+  "version": "0.0.1",
+  "description": "save hyper comment position info into markdown",
+  "main": "src/index.js",
+  "keywords": ["Waline", "comment", "hyper", "github", "markdown"],
+  "author": "lizheming<i@imnerd.org>",
+  "license": "MIT",
+  "dependencies": {
+    "happy-dom": "^9.20.3",
+    "markdown-it": "^13.0.1",
+    "node-fetch": "^2.6.11"
+  }
+}
