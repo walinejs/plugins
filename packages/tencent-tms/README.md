@@ -1,6 +1,6 @@
 # @waline-plugins/tencent-tms
 
-在发布评论的时候，为 Waline 增加腾讯云内容审核插件。
+A Waline plugin that add tencent cloud TMS audit service for Waline when post a new comment.
 
 ## How to Install
 
