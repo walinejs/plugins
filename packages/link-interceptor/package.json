@@ -1,0 +1,11 @@
+{
+  "name": "@waline-plugins/link-interceptor",
+  "version": "1.0.0",
+  "description": "Waline plugin for comment link interceptor",
+  "main": "index.js",
+  "keywords": [
+    "waline","plugin","comment","link", "interceptor"
+  ],
+  "author": "lizheming<i@imnerd.org>",
+  "license": "MIT"
+}
