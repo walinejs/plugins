@@ -22,11 +22,6 @@ module.exports = function({whiteList, blackList, interceptorTemplate}) {
           return !inBlackList || inWhiteList;
         }
       
-        function outputHtml(url) {
-          const template = interceptorTemplate || `<!DOCTYPE html><html lang="zh-CN"><head><title>Redirect to third party website</title></head><body data-url="__URL__"><p>Redirecting to __URL__</p><script>location.href = document.body.getAttribute('data-url');</script></body></html>`;
-          return template.replace(/__URL__/g, () => url);
-        }
-      
         function replaceUrl(text, redirectUrl = `${ctx.protocol}://${ctx.host}/api/redirect`) {
           return text.replace(/href\=\"([^"#]+)\"/g, (originText, url) => {
             if (isValidUrl(url)) {
@@ -54,6 +49,11 @@ module.exports = function({whiteList, blackList, interceptorTemplate}) {
         await next();
       },
       async (ctx, next) => {
+        function outputHtml(url) {
+          const template = interceptorTemplate || `<!DOCTYPE html><html lang="zh-CN"><head><title>Redirect to third party website</title></head><body data-url="__URL__"><p>Redirecting to __URL__</p><script>location.href = document.body.getAttribute('data-url');</script></body></html>`;
+          return template.replace(/__URL__/g, () => url);
+        }
+
         if (ctx.path.toLowerCase() !== '/api/redirect' || ctx.method.toUpperCase() !== 'GET') {
           return next();
         }
