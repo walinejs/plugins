@@ -1,0 +1,21 @@
+{
+  "name": "@waline-plugins/notification-wecom-group-bot",
+  "version": "1.0.0",
+  "description": "Notification for Wecom group bot",
+  "keywords": [
+    "waline",
+    "notification",
+    "blog"
+  ],
+  "homepage": "https://github.com/walinejs/plugins/packages/notification-wecom-group-bot#readme",
+  "bugs": {
+    "url": "https://github.com/walinejs/plugins/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/walinejs/plugins.git"
+  },
+  "license": "MIT",
+  "author": "mapxn",
+  "main": "index.js"
+}
