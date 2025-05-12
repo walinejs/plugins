@@ -31,8 +31,12 @@ module.exports = function({secretId, secretKey, region}) {
         }
 
         const client = new TmsClient(clientConfig);
+
+        // encode comment as Base64 in UTF-8 format
+        const encodedComment = Buffer.from(data.comment, 'utf8').toString('base64');
+
         try {
-          const resp = await client.TextModeration({ Content: data.comment });
+          const resp = await client.TextModeration({ Content: encodedComment });
           if (!resp.Suggestion) {
             throw new Error('Suggestion is empty. Tencent Cloud TMS info:', resp);
           }
