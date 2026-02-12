@@ -9,6 +9,6 @@
   "dependencies": {
     "happy-dom": "^20.0.0",
     "markdown-it": "^14.0.0",
-    "node-fetch": "^2.6.11"
+    "node-fetch": "^3.0.0"
   }
 }
