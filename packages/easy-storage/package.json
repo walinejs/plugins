@@ -1,0 +1,11 @@
+{
+  "name": "@waline-plugins/easy-storage",
+  "version": "1.0.0",
+  "description": "waline plugin for storage json or anything data to database or file with simple api and authentication",
+  "main": "index.js",
+  "keywords": [
+    "waline","plugin","comment","storage","database","file","api","authentication"
+  ],
+  "author": "lizheming<i@imnerd.org>",
+  "license": "MIT"
+}
